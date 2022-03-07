@@ -1,0 +1,47 @@
+
+<html>
+<head>
+    <title>My Cal use tables</title>
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <table class="calculator">
+
+            <tr>
+                <td  colspan="4"><input  class="display-box" type="text" placeholder="0" id="result" class="display-box" ></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="button" value="1" onclick="display('1')" ></td>
+                <td><input type="button" class="button" value="2" onclick="display('2')"></td>
+                <td><input type="button" class="button" value="3" onclick="display('3')"></td>
+                <td><input type="button" class="button" value="C" onclick="clearScreen()" style="background-color:rgb(233, 70, 102)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="button" value="4" onclick="display('4')"></td>
+                <td><input type="button" class="button" value="5" onclick="display('5')"></td>
+                <td><input type="button" class="button" value="6" onclick="display('6')"></td>
+                <td><input type="button" class="button" value="*" onclick="display('*')" style="background-color:rgb(41, 136, 224)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="button" value="7" onclick="display('7')"></td>
+                <td><input type="button" class="button" value="8" onclick="display('8')"></td>
+                <td><input type="button" class="button" value="9" onclick="display('9')"></td>
+                <td><input type="button" class="button" value="/" onclick="display('/')" style="background-color:rgb(41, 136, 224)"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" class="button" value="0" onclick="display('0')"></td>
+                <td><input type="button" class="button" value="+" onclick="display('+')" style="background-color:rgb(41, 136, 224)"></td>
+                <td><input type="button" class="button" value="-" onclick="display('-')" style="background-color:rgb(41, 136, 224)"></td>
+                <td><input type="button" class="button" value="=" onclick="calculate()"  style="background-color:rgb(57, 214, 78)"></td>
+            </tr>
+
+    </table>
+</body>
+
+    <script src="table_java.js"></script>
+
+</html>
